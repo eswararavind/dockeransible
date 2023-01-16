@@ -18,4 +18,8 @@
   <build>
     <finalName>dockeransible</finalName>
   </build>
+  @Inject
+public ProductsController(FormFactory formFactory) {
+    this.productForm = formFactory.form(Product.class);
+}
 </project>
